@@ -132,6 +132,7 @@ body {
   background-color: #1e272e;
   width: 100dvw;
   min-height: 100dvh;
+  overflow-x: hidden;
 }
 
 main {
