@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./gridList.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { DEFAULT_IMAGE } from "@/lib/constants";
 
 interface Data {
   id: string;
@@ -37,7 +38,7 @@ export default function GridList() {
             <Image
               width={300}
               height={300}
-              src={person.squareImage !== "https:undefined" ? person.squareImage : ""}
+              src={person.squareImage !== "https:undefined" ? person.squareImage : DEFAULT_IMAGE}
               alt={`${person.name}'s Image`}
               className={styles["card-img"]}
             />
